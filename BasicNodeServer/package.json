@@ -1,0 +1,17 @@
+{
+  "name": "simpleHttpServer",
+  "version": "1.0.0",
+  "author": "Nivesh Singh <nivesh2@gmail.com>",
+  "description": "Most Basic Node Server.",
+  "private": true,
+  "scripts": {
+    "start": "nodemon simpleHttpServer.js"
+  },
+  "dependencies": {
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "jshint":2.9.1,
+    "nodemon":1.8.1
+  }
+}
