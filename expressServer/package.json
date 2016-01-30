@@ -1,8 +1,8 @@
 {
-  "name": "simpleHttpServer",
+  "name": "simpleExpressServer",
   "version": "1.0.0",
   "author": "Nivesh Singh <nivesh2@gmail.com>",
-  "description": "Most Basic Node Server.",
+  "description": "Basic Express Server with MVC architecture.",
   "private": true,
   "scripts": {
     "start": "nodemon app.js"
