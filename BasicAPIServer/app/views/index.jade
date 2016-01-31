@@ -1,0 +1,14 @@
+html
+ head
+  title helloAPI
+ body
+  h2 API Documnentation
+  
+  h3 Routes:
+  
+  ul
+   li POST '/login', will send usesername, email and password.
+   li POST '/authenticate' along with username and password, if both are valid response will have an access token.
+   li GET '/api/v1/info' to access api routes one has to send issued access token every time.
+  
+  p Access token expire time is set to 1 minutes. 
