@@ -1,0 +1,30 @@
+{
+  "name": "apiserver",
+  "version": "2.0.0",
+  "description": "basic nodeJs server with logging module",
+  "author": "nivesh singh",
+  "main": "app.js",
+  "keywords": [
+    "api",
+    "server"
+  ],
+  "private": true,
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "bunyan": "^1.6.0",
+    "crypto": "0.0.3",
+    "express": "^4.13.4",
+    "jade": "^1.11.0",
+    "jsonwebtoken": "^5.5.4",
+    "mongoose": "^4.3.7",
+    "morgan": "^1.6.1"
+  },
+  "devDependencies": {
+    "jshint": "2.9.1",
+    "nodemon": "1.8.1"
+  },
+  "license": "MIT"
+}
