@@ -2,8 +2,8 @@
 
 
 const middleware = function(app){
-    const bodyParser = require('body-parser');
-    const logger = require('morgan');
+    const bodyParser = require('body-parser'),
+          logger = require('morgan');
 
     //throws 400 error to next, if JSON is not valid 
     app.use(bodyParser.json({
