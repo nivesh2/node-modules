@@ -4,9 +4,9 @@ const port = process.env.PORT || 3000 ;
 const http = require('http');
 
 http.createServer(function(request, response) {
-  const headers = request.headers;
-  const method = request.method;
-  const url = request.url;
+  const headers = request.headers,
+        method = request.method,
+        url = request.url;
   
   if (method === 'GET' && url === '/') {
       response.writeHead(200,{
