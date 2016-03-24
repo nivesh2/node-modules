@@ -6,7 +6,7 @@ module.exports = function(app){
     app.use((req,res,next)=>{
        debug('Page Not found, Erro: 404');
 
-       var err = new Error(Page Not Found);
+       var err = new Error('Page Not Found');
        err.status = 404;
        err.name = 'PageNotFound';
        next(err);
@@ -30,6 +30,7 @@ module.exports = function(app){
     // Production error handler
         app.use(function(err, req, res,next) {
             debug(`Error name: ${err.name} | message: ${err.message}`);
+            debug(`Error stack trace: ${err.stack}`);
 
             res.status(err.status || 500).json({
               error: {},
