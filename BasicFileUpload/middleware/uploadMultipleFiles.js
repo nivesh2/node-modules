@@ -30,18 +30,19 @@ module.exports = function(app){
   const upload = multer({storage:storage, fileFilter : fileFilter}).any();
   app.post('/uploadsFiles',upload,(req,res)=>{
 
-    if(req.files[0] != undefined){
-      // once uploaded save the user data along with uploaded photo path to the database.
-      res.json({
-         "fileName":req.files[0].originalname,
-         "userName":req.body.userName,
-         "phoneNumer":req.body.phoneNumber
-      });
-    }else{
-      res.json({
-        "message":"unable to upload file"
-      });
-    }
+    if(req.files[0] !==  undefined){
+
+        // once uploaded save the user data along with uploaded photo path to the database.
+        res.json({
+           'fileName':req.files[0].originalname,
+           'userName':req.body.userName,
+           'phoneNumer':req.body.phoneNumber
+        });
+      }else{
+        res.json({
+          'message':'Unable to Upload file'
+        });
+      }
 
   });
 
@@ -59,16 +60,17 @@ module.exports = function(app){
       }
       // everything went just fine
 
-      if(req.files[0] != undefined){
+      if(req.files[0] !==  undefined){
+
         // once uploaded save the user data along with uploaded photo path to the database.
         res.json({
-           "fileName":req.files[0].originalname,
-           "userName":req.body.userName,
-           "phoneNumer":req.body.phoneNumber
+           'fileName':req.files[0].originalname,
+           'userName':req.body.userName,
+           'phoneNumer':req.body.phoneNumber
         });
       }else{
         res.json({
-          "message":"unable to upload file"
+          'message':'Unable to Upload file'
         });
       }
     });
