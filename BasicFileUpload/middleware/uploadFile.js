@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function(app){
+module.exports = (function(){
 
   const multer = require('multer');
 
@@ -28,22 +28,7 @@ module.exports = function(app){
    * An object with a of file will be stored in req.file.
    */
   const upload = multer({storage:storage, fileFilter : fileFilter}).single('userPhoto');
-  app.post('/uploadFile',upload,(req,res)=>{
+  
+  return upload;
 
-      if(req.file !=  undefined){
-
-        // once uploaded save the user data along with uploaded photo path to the database.
-        res.json({
-           "fileName":req.file.originalname,
-           "destination":req.file.filename,
-           "userName":req.body.userName,
-           "phoneNumer":req.body.phoneNumber
-        });
-      }else{
-        res.json({
-          "message":"Unable to Upload file"
-        })
-      }
-  });
-
-};
+}());
