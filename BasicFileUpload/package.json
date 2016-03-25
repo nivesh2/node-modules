@@ -1,0 +1,26 @@
+{
+  "name": "fileupload",
+  "version": "1.0.0",
+  "description": "Ajax File Upload module in Node.Js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "keywords": [
+    "file",
+    "upload"
+  ],
+  "author": "Nivesh Singh",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.4",
+    "jade": "^1.11.0",
+    "morgan": "^1.6.1"
+  },
+  "devDependencies": {
+    "jshint": "2.9.1",
+    "nodemon": "1.8.1"
+  }
+}
