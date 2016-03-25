@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Multer Upload</title>
+        <script src="/jquery.js"></script>
+    </head>
+    <body>
+        <h2>Upload Image</h2>
+        <form>
+            <label for="userName">Name</label>
+            <input type="text" name="userName"/>
+            <br>
+            <label for="phoneNumber">PhoneNumber</label>
+            <input type="text" name="phoneNumber"/>
+            <br>
+            <label for="file">UploadFile</label>
+            <input type="file" name="userPhoto"/>
+            <input type="submit"/>
+        </form>
+        <script>
+            $(function(){
+               $('form').submit(function(e){
+
+                  //formData sets: multipart/form-data
+                  var formData = new FormData($(this)[0]);
+                  $.ajax({
+                      type:'POST',
+                      url:'http://localhost:3000/uploadFile',
+                      data : formData,
+                      contentType: false,
+                      processData: false
+                  }).done(function(data){
+                      //print response on success
+                      console.log(data);
+
+                  }).fail(function(data) {
+                        console.log('Error');
+                    });
+                  e.preventDefault();
+               });
+            })();
+        </script>
+    </body>
+</html>
