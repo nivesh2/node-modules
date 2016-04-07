@@ -5,7 +5,7 @@
   "description": "Basic Express Server with MVC architecture.",
   "private": true,
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js"
   },
   "dependencies": {
     "body-parser": "^1.14.2",
