@@ -1,12 +1,17 @@
 
+//function to require local modules
+global.rootRequire = function(name) {
+    return require(__dirname + '/' + name);
+}
+
 //start express server
-var app = require('./config/main.js')();
+var app = rootRequire('config/main')();
 
 //add middlewares to express
-require('./config/middleware.js')(app);
+rootRequire('config/middleware')(app);
 
 //add routes
-require('./route/base.js')(app);
+rootRequire('route/base')(app);
 
 //handle errors
-require('./route/handdleError.js')(app);
+rootRequire('route/handdleError')(app);
