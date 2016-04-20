@@ -1,7 +1,7 @@
 'use strict';
 
 const route = function(app){
-    console.log(rootRequire);
+    
     app.get('/',(req,res)=>{
         res.send('<h1>Welcome to Home Page<h1>');
     });
