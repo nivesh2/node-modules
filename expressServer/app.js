@@ -1,8 +1,5 @@
 
-//function to require local modules
-global.rootRequire = function(name) {
-    return require(__dirname + '/' + name);
-}
+require('./global');
 
 //start express server
 var app = rootRequire('config/main')();
