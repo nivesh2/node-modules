@@ -11,12 +11,7 @@ Basic API Server using Express framework and Node.JS.
 
 ### Run: 
 ```shell 
-  DEBUG='main:*' node app.js
-```  
-
-### Run with nodemon:
-```shell 
-  DEBUG='main:*' nodemon node app.js
+  npm start
 ```  
 
 ### Routes:

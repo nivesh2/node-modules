@@ -11,12 +11,7 @@ Basic Http Server using Express framework and Node.JS.
 
 ### Run: 
 ```shell 
-  DEBUG='app:*' node app.js
-```  
-
-### Run with nodemon:
-```shell 
-  DEBUG='app:*' nodemon node app.js
+  npm start
 ```  
 
 ### Routes:
