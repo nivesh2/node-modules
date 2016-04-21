@@ -17,5 +17,3 @@ This module has binded http and socket in the same port.
    npm start
  ```  
 Simply hit the localhost:3000 and let the magic happen.
-
- > nodemon should be installed
