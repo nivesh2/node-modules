@@ -19,5 +19,3 @@ Simply use any of them and you are good to go.
    npm start
  ```  
 Simply hit the localhost:3000 and let the magic happen.
-
- > nodemon should be installed
