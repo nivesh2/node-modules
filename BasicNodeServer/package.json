@@ -5,14 +5,13 @@
   "description": "Most Basic Node Server.",
   "private": true,
   "scripts": {
-    "start": "nodemon simpleExpressServer.js"
+    "start": "node simpleExpressServer.js"
   },
   "dependencies": {
     "express": "^4.13.4"
   },
   "license": "MIT",
   "devDependencies": {
-    "jshint": "2.9.1",
-    "nodemon": "1.8.1"
+    "jshint": "2.9.1"
   }
 }
