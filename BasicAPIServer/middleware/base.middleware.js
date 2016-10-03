@@ -13,7 +13,7 @@ module.exports = function(app){
         })); 
         
     //parses the url encoded strings    
-    app.use(bodyParser.urlencoded({ 
+    app.use(bodyParser.urlencoded({
         extended:true,
         }));
     
